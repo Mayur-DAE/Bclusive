@@ -1,0 +1,7 @@
+.add-space-menu-list {
+  @apply hover:bg-slate-200 font-semibold py-2 px-4 flex items-center rounded-md mb-2 cursor-pointer;
+}
+
+.add-space-menu-list-active {
+  @apply bg-slate-200;
+}

@@ -1,0 +1,6 @@
+.last-minute-deals-wrapper {
+  background-image: url("https://staging.bclusive.com/assets/img/weekend-sales.png");
+}
+.last-minute-deals-wrapper .slick-slide {
+  padding: 0px 10px;
+}

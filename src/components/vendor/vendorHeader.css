@@ -1,0 +1,23 @@
+@media (min-width: 1024px) {
+  header a span {
+    display: none;
+  }
+}
+header a.active {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border-style: solid;
+  border-image-source: linear-gradient(
+    to right,
+    #626262 0%,
+    rgba(98, 98, 98, 0) 100%
+  );
+  border-image-slice: 1;
+  background-image: linear-gradient(to bottom, #323232, #323232),
+    linear-gradient(to right, #626262 0%, rgba(98, 98, 98, 0) 100%);
+  background-origin: border-box;
+}
+
+header a.active span {
+  display: block;
+}
