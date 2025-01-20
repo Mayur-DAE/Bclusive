@@ -1,8 +1,8 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
-import { BrowserRouter, Routes, Route } from "react-router";
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { HashRouter, Routes, Route } from 'react-router-dom'; // Use HashRouter
+import './index.css';
+import App from './App.jsx';
 import { SearchListings } from './SearchListings.jsx';
 import { Listings } from './Listings.jsx';
 import ListingDetails from './ListingDetails.jsx';
@@ -20,11 +20,9 @@ import { Reviews } from './vendors/Reviews.jsx';
 import { Settings } from './vendors/Settings.jsx';
 import { AddSpace } from './vendors/AddSpace.jsx';
 
-
-
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route index element={<App />} />
         <Route path='/search' element={<SearchListings />} />
@@ -46,6 +44,6 @@ createRoot(document.getElementById('root')).render(
           <Route path="add-space" element={<AddSpace />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>,
-)
+);
